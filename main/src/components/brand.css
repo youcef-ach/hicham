@@ -1,0 +1,24 @@
+.brandFlex .brandTitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.brandFlex {
+  padding: 80px;
+}
+
+.brandFlex .title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.brandFlex .text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.brandFlex .brandCard {
+  padding: 48px;
+  background-color: #f9f9f9;
+}

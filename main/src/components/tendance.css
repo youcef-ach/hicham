@@ -1,0 +1,11 @@
+.tendanceFlex {
+  padding: 0 80px;
+}
+
+.tendanceView {
+  margin-top: 40px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #F9F9F9;
+}

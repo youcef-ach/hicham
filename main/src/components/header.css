@@ -1,0 +1,44 @@
+.header {
+  background-color: white;
+  color: #726e8d !important;
+  height: fit-content;
+}
+
+.logo {
+  font-size: 24px !important;
+  padding-left: 60px;
+  font-weight: 400 !important;
+}
+
+.headerFlex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerRightFlex {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerIcons {
+  font-size: 24px;
+  color: 22202E;
+}
+
+.dividerCont {
+  padding: 0 24px;
+  background-color: white;
+}
+
+.dividerCont .ant-divider {
+  margin: 0;
+}
+
+.catMenu {
+    justify-content: center;
+}
+
+.catMenu span {
+  color: #726e8d;
+}

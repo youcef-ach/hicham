@@ -1,0 +1,48 @@
+.heroCont {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+.heroCont img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroCont .heroCard {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 80px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 56px;
+}
+
+.heroCont .title {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.heroCont .text2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #5b5676;
+  display: block;
+}
+
+.heroCont .text3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2a254b;
+  display: block;
+  padding: 16px 24px;
+  position: absolute;
+  bottom: 68px;
+  left: 56px;
+  background-color: #f9f9f9;
+}
