@@ -1,11 +1,11 @@
 import "./started.css";
 import { Flex, Typography } from "antd";
+import started from "../assets/images/started.png";
 
 function Started() {
   return (
     <Flex
       justify="center"
-      align="center"
       gap={16}
       className="startedFlex fullW"
     >
@@ -28,6 +28,7 @@ function Started() {
           View collection
         </Typography.Text>
       </Flex>
+      <img src={started} className="startedImg"/>
     </Flex>
   );
 }

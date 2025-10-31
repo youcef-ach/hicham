@@ -16,6 +16,7 @@
 
 .startedCard {
   background-color: #2a254b;
+  padding: 56px;
 }
 
 .startedView {
@@ -24,4 +25,11 @@
   color: white;
   padding: 16px 24px;
   background-color: #4E4D93;
+}
+
+.startedImg {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 50%;
 }

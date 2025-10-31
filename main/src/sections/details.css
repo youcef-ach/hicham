@@ -1,0 +1,54 @@
+.detailsFlex .detailsImgCont {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-height: 700px;
+}
+
+.detailsFlex .rightDetails {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.detailsFlex .mainTitle {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.detailsFlex .price {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.detailsFlex .descTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.detailsFlex .desc {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.detailsFlex .dim {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 36px 16px 0;
+}
+
+.addBtn {
+  background-color: #2a254b;
+  padding: 32px 48px;
+  width: fit-content;
+  color: white;
+  margin-top: 32px;
+}
+
+.might {
+  font-size: 32;
+  font-weight: 400;
+  margin: 40px 56px 40px 56px !important;
+  display: block;
+}

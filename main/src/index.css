@@ -41,7 +41,8 @@
 }
 
 * {
-  font-family: "Clash Display" sans-serif !important;
+  /* font-family: "Clash Display" !important; */
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 body {
@@ -87,4 +88,13 @@ body {
 
 .darkPrimary {
   color: #2a254b !important;
+}
+
+.aboutTitle {
+  font-size: 36;
+  font-weight: 400;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding: 67px 0;
 }

@@ -16,7 +16,7 @@ function ProductCard({ args }) {
           {args.title}
         </Typography.Title>
         <Typography.Text className="price darkPrimary">
-          {args.price}$
+          {args.price}
         </Typography.Text>
       </Flex>
     </Flex>
