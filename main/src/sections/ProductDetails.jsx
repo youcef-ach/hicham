@@ -1,5 +1,5 @@
-import { Button, Divider, Flex, InputNumber, Table, Typography } from "antd";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Button, Divider, Flex, InputNumber, Typography } from "antd";
+import { useLoaderData } from "react-router-dom";
 import "./details.css";
 import p1 from "../assets/images/p1.png";
 import p2 from "../assets/images/p2.png";
@@ -11,9 +11,6 @@ import brand2 from "../assets/images/brand2.png";
 
 function ProductDetails() {
   const product = useLoaderData();
-
-  const { id } = useParams();
-  console.log(id);
 
   return (
     <>
@@ -128,7 +125,10 @@ function ProductDetails() {
               studio in South London in early 2014
             </Typography.Text>
           </Flex>
-          <Typography.Text className="startedView" style={{backgroundColor:"#2a254b"}}>
+          <Typography.Text
+            className="startedView"
+            style={{ backgroundColor: "#2a254b" }}
+          >
             View collection
           </Typography.Text>
         </Flex>

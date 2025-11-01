@@ -5,8 +5,12 @@ import p2 from "../assets/images/p2.png";
 import p3 from "../assets/images/p3.png";
 import p4 from "../assets/images/p4.png";
 import ProductCard from "./ProductCard";
+import { useNavigate } from "react-router-dom";
 
 function Tendance() {
+
+  const redirect = useNavigate()
+  
   return (
     <>
       <Flex justify="center" align="center" gap={15} className="tendanceFlex">
@@ -39,7 +43,18 @@ function Tendance() {
           }}
         />
       </Flex>
-      <Typography.Text className="tendanceView darkPrimary">View collection</Typography.Text>
+      <Typography.Text
+        className="tendanceView darkPrimary"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+          redirect("/all_products");
+        }}
+      >
+        View collection
+      </Typography.Text>
     </>
   );
 }

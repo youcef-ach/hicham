@@ -15,6 +15,7 @@ import p7 from "./assets/images/p7.png";
 import p8 from "./assets/images/p8.png";
 import p9 from "./assets/images/p9.png";
 import About from "./sections/About";
+import HeaderWrapper from "./components/HeaderWrapper";
 
 const products = [
   {
@@ -37,34 +38,38 @@ const products = [
 const myRouter = createBrowserRouter([
   {
     path: "",
-    Component: Landing,
-  },
-  {
-    path: "/all_products",
-    Component: AllProducts,
-  },
-  {
-    path: "/product_details/:id",
-    Component: ProductDetails,
-    loader: ({ params }) => {
-      const id = params.id;
-      return products.find((singleProduct) => singleProduct.id == id);
-    },
-  },
-  {
-    path: "/about",
-    Component: About,
+    Component: HeaderWrapper,
+    loader: (a) => a,
+    children: [
+      {
+        path: "/home",
+        Component: Landing,
+        index: true,
+      },
+      {
+        path: "/all_products",
+        Component: AllProducts,
+      },
+      {
+        path: "/product_details/:id",
+        Component: ProductDetails,
+        loader: ({ params }) => {
+          const id = params.id;
+          return products.find((singleProduct) => singleProduct.id == id);
+        },
+      },
+      {
+        path: "/about",
+        Component: About,
+      },
+    ],
   },
 ]);
 
 function App() {
   return (
     <Layout style={{ backgroundColor: "transparent", position: "relative" }}>
-      <Header />
-      <Layout.Content>
         <RouterProvider router={myRouter} />
-      </Layout.Content>
-      <Footer />
     </Layout>
   );
 }

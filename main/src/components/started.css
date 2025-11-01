@@ -24,7 +24,14 @@
   font-weight: 400;
   color: white;
   padding: 16px 24px;
-  background-color: #4E4D93;
+  background-color: #4e4d93;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.startedView:hover {
+  background-color: white;
+  color: #2a254b;
 }
 
 .startedImg {

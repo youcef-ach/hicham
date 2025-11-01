@@ -7,5 +7,12 @@
   padding: 16px 32px;
   font-size: 16px;
   font-weight: 400;
-  background: #F9F9F9;
+  background: #f9f9f9;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.tendanceView:hover {
+  background-color: #2a254b;
+  color: white !important;
 }

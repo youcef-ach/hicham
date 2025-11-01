@@ -5,17 +5,18 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import "./header.css";
+import { Link, useLocation } from "react-router-dom";
 
 const { Title } = Typography;
 
 const items = [
   {
-    label: "categorie1",
-    key: "categorie1",
+    label: <Link to="/home">Home</Link>,
+    key: "home",
   },
   {
-    label: "categorie2",
-    key: "categorie2",
+    label: <Link to="/about">About</Link>,
+    key: "about",
   },
   {
     label: "categorie3",
@@ -30,16 +31,19 @@ const items = [
     key: "categorie5",
   },
   {
-    label: "categorie6",
-    key: "categorie6",
-  },
-  {
-    label: "categorie7",
-    key: "categorie7",
+    label: <Link to="/all_products">all_products</Link>,
+    key: "all_products",
   },
 ];
 
 function App() {
+  let defaultSelectedKeys = "";
+  const { pathname } = useLocation();
+  if (pathname.startsWith("/h")) defaultSelectedKeys = "home";
+  else if (pathname.startsWith("/about")) defaultSelectedKeys = "about";
+  else if (pathname.startsWith("/all")) defaultSelectedKeys = "all_products";
+  else if (pathname.startsWith("/product")) defaultSelectedKeys = "";
+
   return (
     <>
       <Layout.Header className="header">
@@ -56,10 +60,11 @@ function App() {
             <Divider />
           </div>
           <Menu
+            onChange={(a) => console.log(a)}
             items={items}
             mode="horizontal"
             theme="light"
-            defaultSelectedKeys={"categorie1"}
+            defaultSelectedKeys={defaultSelectedKeys}
             className="catMenu noBO fullW"
           ></Menu>
         </Flex>

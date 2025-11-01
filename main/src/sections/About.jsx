@@ -4,6 +4,7 @@ import b4 from "../assets/images/b4.png";
 import { Flex } from "antd";
 import Brand from "../components/Brand";
 import Bfooter from "../components/Bfooter";
+import "./about.css";
 
 function About() {
   return (
@@ -38,10 +39,7 @@ function About() {
               the London interior design community.
             </Typography.Text>
           </Flex>
-          <Typography.Text
-            className="startedView"
-            style={{ backgroundColor: "#2a254b" }}
-          >
+          <Typography.Text className="aboutView">
             View collection
           </Typography.Text>
         </Flex>
@@ -72,8 +70,7 @@ function About() {
             </Typography.Text>
           </Flex>
           <Typography.Text
-            className="startedView"
-            style={{ backgroundColor: "#2a254b" }}
+            className="aboutView"
           >
             View collection
           </Typography.Text>

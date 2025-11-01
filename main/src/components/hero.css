@@ -45,4 +45,11 @@
   bottom: 68px;
   left: 56px;
   background-color: #f9f9f9;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.heroCont .text3:hover {
+  background-color: #2a254b;
+  color: white;
 }
